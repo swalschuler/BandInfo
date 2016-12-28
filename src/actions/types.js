@@ -1,3 +1,1 @@
-/*
-export const EMAIL_CHANGED = 'email_changed'
-*/
+export const FETCH_SCHEDULE = 'fetch_schedule';
