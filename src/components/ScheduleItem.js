@@ -34,7 +34,7 @@ const ScheduleItem = ({ event }) => {
 
 const styles = {
   eventNameTextStyle: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold'
   }
 };

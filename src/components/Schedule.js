@@ -24,7 +24,6 @@ class EmailList extends Component {
   }
 
   renderRow(scheduleEvent) {
-    console.log(scheduleEvent);
     return <ScheduleItem event={scheduleEvent} />;
   }
 

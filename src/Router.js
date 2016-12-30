@@ -3,6 +3,7 @@ import { Text, Navigator } from 'react-native';
 import { Scene, Router } from 'react-native-router-flux';
 import EmailList from './components/EmailList';
 import Schedule from './components/Schedule';
+import Email from './components/Email';
 
 const TabIcon = ({ selected, title }) => {
   return (
@@ -31,10 +32,13 @@ const RouterComponent = () => {
 
             {/* Can use this to add other stuff later */}
             <Scene 
-              sceneStyle={{ paddingTop: Navigator.NavigationBar.Styles.General.NavBarHeight }}
-              key="gray"
-              component={Schedule}
-              title="Gray"
+              sceneStyle={{ 
+                paddingTop: Navigator.NavigationBar.Styles.General.NavBarHeight,
+                paddingBottom: Navigator.NavigationBar.Styles.General.NavBarHeight
+              }}
+              key="emailDisplay"
+              component={Email}
+              title="Email"
             />
           </Scene>
 
